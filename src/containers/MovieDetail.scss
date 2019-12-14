@@ -1,0 +1,134 @@
+$text-color: rgb(38, 42, 53);
+
+.bg{
+    background-color: rgb(77, 84, 105);
+    height: 480px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.detail-container{
+    padding: 16px;
+}
+
+.poster-img{
+    height: 540px;
+    border-radius: 8px;
+    box-shadow: 0 2px 45px 0 rgba(0, 0, 0, 0.5);
+}
+
+.movie-info{
+    padding: 12px;
+
+    h1{
+        font-size: 64px;
+        font-weight: 800;
+        color: white;
+    }
+
+    h2{
+        font-weight: 700;
+        color: indianred;
+    }
+    h2::after{
+        content: " / 10";
+        font-weight: 500;
+        color: rgb(180, 180, 180);
+        font-size: 18px;
+    }
+
+    p{
+        color: white;
+    }
+
+    .genres-container{
+        display: block;
+        width: 100%;
+        margin: 24px 0;
+    }
+
+    
+    span{
+        padding: 10px;
+        border-radius: 8px;
+        background-color: rgb(236, 236, 236);
+        float: left;
+        margin-right: 8px;
+        margin-bottom: 8px ;
+    }
+
+}
+
+.tab-detail-container{
+    margin-top: 40px;
+
+    .tab-content{
+        padding: 20px;
+    }
+
+    .review-item{
+        background-color: rgb(250, 250, 250);
+        margin:16px 0;
+        border-radius: 8px;
+        padding: 16px;
+
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 16px;
+            color: rgb(61, 61, 61);
+        }
+    }
+
+    .video-item-container{
+        p{
+            margin: 16px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        iframe{
+            border-radius: 16px;
+            border: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bg{
+        display: none;
+    }
+    .poster-img{
+        width: 100%;
+    }
+
+    .movie-info{
+        h1{
+            color: $text-color;
+        }
+    
+        h2{
+            color: $text-color;
+        }
+    
+        p{
+            color: $text-color;
+        }
+    }
+
+    .video-item-container{
+
+        p{
+            font-size: 14px;
+        }
+
+        iframe{
+            height: 200px;
+        }
+    }
+    
+}

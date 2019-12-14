@@ -1,0 +1,56 @@
+$text-color: rgb(38, 42, 53);
+
+.container-movie-item{
+    width: 23%;
+    margin: 16px 8px;
+    cursor: pointer;
+    
+
+    .card{
+        height: 600px;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+        border: none;
+
+        img{
+            border-radius: 16px 16px 0 0;
+        }
+    }
+
+    a{
+        h2{
+            color:$text-color;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    
+        p{
+            color:$text-color;
+        }
+        h3{
+            color:rgb(233, 70, 70);
+            font-weight: 700;
+        }
+        h3::after{
+            content: " / 10";
+            color: rgb(180, 180, 180);
+            font-size: 20px;
+        } 
+    }
+
+    a:hover{
+        text-decoration: none !important;
+        font-style: normal;
+        background-color: red;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container-movie-item{
+        width: 100%;
+    }
+}

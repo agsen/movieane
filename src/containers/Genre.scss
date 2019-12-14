@@ -1,0 +1,28 @@
+.genre-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+    .genre-item{
+        width: 28%;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 40px 20px;
+        margin: 20px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .genre-container{
+        justify-content: center;
+
+        .genre-item{
+            width: 80%;
+        }
+    }
+    
+}
